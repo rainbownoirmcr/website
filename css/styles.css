@@ -2,6 +2,23 @@
 /* style sheet - Rainbow Noir									*/
 /*--------------------------------------------------------------*/
 
+/* import fonts */
+@font-face { font-family: edo; /* https://github.com/zurb/wired2015-static/tree/master/src/assets/fonts/edo */
+	src: url("../fonts/edo/edo-webfont.eot"); /* IE9 Compat Modes */
+	src: url("../fonts/edo/edo-webfont.woff2") format('woff2'), /* Super Modern Browsers */
+		url("../fonts/edo/edo-webfont.woff") format('woff'), /* Pretty Modern Browsers */
+		url("../fonts/edo/edo-webfont.ttf")  format('truetype'), /* Safari, Android, iOS */
+		url("../fonts/edo/edo-webfont.svg#svgFontName") format('svg'); /* Legacy iOS */
+}
+@font-face { font-family: ptsans;
+	src: url("../fonts/ptsans/ptsans-webfont.eot"); /* IE9 Compat Modes */
+	src: url("../fonts/ptsans/ptsans-webfont.woff") format('woff'), /* Pretty Modern Browsers */
+		url("../fonts/ptsans/ptsans-webfont.ttf")  format('truetype'), /* Safari, Android, iOS */
+		url("../fonts/ptsans/ptsans-webfont.svg#svgFontName") format('svg'); /* Legacy iOS */
+}
+
+
+
 /* master reset */
 body, div, h1, h2, h3, h4, p, ul, ol, li, img, table, tr, td, a{margin:0; padding:0;}
 
@@ -9,7 +26,7 @@ body, div, h1, h2, h3, h4, p, ul, ol, li, img, table, tr, td, a{margin:0; paddin
 /* setting variables */
 :root {
 	--fontpaint: edo;
-	--fontsans: 'PT Sans';
+	--fontsans: ptsans;
 	--blackcolor: black;
 	--textcolor: white;
 	--theme1: #000000;
@@ -28,10 +45,9 @@ body, div, h1, h2, h3, h4, p, ul, ol, li, img, table, tr, td, a{margin:0; paddin
 
 
 /* fonts */
-@font-face { font-family: edo; src:url("../fonts/edo/edo.ttf");}
-body, div, h1, h2, h3, h4, p, ul, ol, li, img, table, tr, td, a{ font-family: edo, cursive; font-family: 'PT Sans', sans-serif;}
-html { font-size: 14px; color: var(--textcolor);}
-@media (min-width: 900px) { html{font-size: 16px;}}
+body, div, h1, h2, h3, h4, p, ul, ol, li, img, table, tr, td, a{ font-family: edo, cursive; font-family: ptsans, sans-serif;}
+html { font-size: 15px; color: var(--textcolor);}
+@media (min-width: 900px) { html{font-size: 17px;}}
 @media (min-width: 1200px) { html{font-size: 20px;}}
 h1 { font-size: 3.125em; padding: 5px 0; font-family: var(--fontpaint);}
 /* h2 { font-size: 2.3125em;} */
@@ -52,6 +68,9 @@ a {
 }
 ul {
 	margin-left: 2em;
+}
+li {
+	width: 100%;
 }
 
 
@@ -76,10 +95,9 @@ span.indigo{color: var(--flagindigo);}
 span.purple{color: var(--flagpurple);}
 
 /* flag hover */
-
 a.brown:hover{color: var(--flagbrown);}
 a.pink:hover{color: var(--flagpink);}
-a span.red:hover{color: var(--flagred);}
+a.red:hover{color: var(--flagred);}
 a.orange:hover{color: var(--flagorange);}
 a.yellow:hover{color: var(--flagyellow);}
 a.green:hover{color: var(--flaggreen);}
@@ -87,7 +105,8 @@ a.blue:hover{color: var(--flagblue);}
 a.indigo:hover{color: var(--flagindigo);}
 a.purple:hover{color: var(--flagpurple);}
 
-
+/* icons basic */
+img.icon {height: 1em;}
 
 /*--------------------------------------------------------------*/
 /* WRAPPER														*/
@@ -105,6 +124,9 @@ a.purple:hover{color: var(--flagpurple);}
 	padding: 0.1em 0.4em;
 	display: block;
 	z-index: 1;
+}
+.social-links img.icon {
+	vertical-align: middle;
 }
 @media (min-width:600px){
 	.social-links {
@@ -184,6 +206,10 @@ a.purple:hover{color: var(--flagpurple);}
 	background-color: var(--theme1);
 }
 .nav span.nav-button:hover {transition: 0.3s; background-color: var(--textcolor); color: var(--theme1);}
+.nav span.nav-button img.icon {vertical-align: middle;}
+.nav span.nav-button:hover img.b {display: inline;}
+.nav span.nav-button img.b {display: none;}
+.nav span.nav-button:hover img.w {display: none;}
 
 /* .nav span.nav-button:hover span.brown{color: var(--flagbrown);}
 .nav span.nav-button:hover span.pink{color: var(--flagpink);}
@@ -194,6 +220,7 @@ a.purple:hover{color: var(--flagpurple);}
 .nav span.nav-button:hover span.blue{color: var(--flagblue);}
 .nav span.nav-button:hover span.indigo{color: var(--flagindigo);}
 .nav span.nav-button:hover span.purple{color: var(--flagpurple);} */
+
 
 
 
@@ -368,7 +395,7 @@ a.purple:hover{color: var(--flagpurple);}
 /*--------------------------------------------------------------*/
 .acknowledgements {
 	text-align: center;
-	padding-bottom: 2em;
+	padding: 2em 0;
 }
 .acknowledgements .logos {
 	min-height: 200px;
@@ -540,11 +567,16 @@ a.purple:hover{color: var(--flagpurple);}
 		line-height: 1.4em;
 		vertical-align: middle;
 	}
-	.footer .right i.icon {
-		font-size: 1.4em;
+	.footer .right img.icon {
+		height: 1.4em;
 		line-height: 1.4em;
 		vertical-align: middle;
 		padding: 0 0.2em;
+	}
+	.footer .right span.display img.icon-inline {
+		height: 1em;
+		line-height: 1.4em;
+		vertical-align: middle;
 	}
 	.footer .right span.display {
 		display: inline;
