@@ -136,7 +136,7 @@ for (i = 0; i < acc.length; i++) {
 /*--------------------------------------------------------------*/
 /* image-grid */
 
-var nimg=32
+var nimg=36
 
 /* image1 */
 var text="images/instagram/"+(nimg-0)+".jpg";
