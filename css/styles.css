@@ -337,6 +337,7 @@ img.icon {height: 1em;}
 	width: 100%;
 	text-align: center;
 	margin-bottom: 5em;
+	padding-top: 5em;
 }
 .events a.accordion {
 	cursor: pointer;
