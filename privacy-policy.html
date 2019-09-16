@@ -60,19 +60,30 @@
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">X</a>
 
   <div class="overlay-content">
-	<a class="red" href="index.html#home">Home</a>
-    <a class="yellow" href="index.html#about">Who are Rainbow Noir?</a>
-    <a class="green" href="index.html#socials">Our meet ups</a>
-	<a class="indigo" href="index.html#acknowledgements">Shout outs</a>
-    <a class="purple" href="index.html#contact">Contact</a>
+	<a class="red" href="index.html#home" onclick="closeNav()">Home</a>
+	<a class="orange" href="index.html#about" onclick="closeNav()">Who are Rainbow Noir?</a>
+	<a class="yellow" href="index.html#socials" onclick="closeNav()">Our meet ups</a>
+	<a class="green" href="index.html#events" onclick="closeNav()">Events</a>
+	<a class="blue" href="index.html#projects" onclick="closeNav()">Projects</a>
+	<a class="indigo" href="index.html#contact" onclick="closeNav()">Contact</a>
+	<a class="purple" href="index.html#acknowledgements" onclick="closeNav()">Shout outs</a>
   </div>
 
 </div>
 
+
 <div class="nav">
+	
+	<!-- nav button -->
 	<span class="nav-button" onclick="openNav()" style="cursor:pointer">
 		<img class="icon w" src="images/icons/white/bars.png"></img><img class="icon b" src="images/icons/black/bars.png"></img> MENU
 	</span>
+	
+	<!-- quick escape -->
+	<span class="exit">
+		<a href="https://www.google.com/">exit site</a>
+	</span>
+	
 </div>
 
 
@@ -196,15 +207,67 @@
 		<p><a href="https://www.facebook.com/rainbownoirmcr/" target="_blank"><span class="display">facebook  </span><img class="icon" src="images/icons/white/facebook.png"></img></a></p>
 		<p><a href="https://twitter.com/RainbowNoirMCR" target="_blank"><span class="display">twitter  </span><img class="icon" src="images/icons/white/twitter.png"></img></a></p>
 		<p><a href="https://www.instagram.com/RainbowNoirMCR" target="_blank"><span class="display">instagram  </span><img class="icon" src="images/icons/white/instagram.png"></img></a></p>
-		<p><a href="mailto:rainbownoirmcr@gmail.com?Subject=Website%20Enquiry" target="_top"><span class="display">rainbownoirmcr<img class="icon-inline" src="images/icons/white/at.png"></img>gmail.com  </span><img class="icon" src="images/icons/white/envelope.png"></img></a></p>
+		<p><a href="mailto:rainbownoirmcr@gmail.com"><span class="display">rainbownoirmcr<img class="icon-inline" src="images/icons/white/at.png"></img>gmail.com  </span><img class="icon" src="images/icons/white/envelope.png"></img></a></p>
 	</div>
 	<div class="left">
 		<a href="index.html#home"><img src="images/RN-clear.png"></a>
 	</div>
 	
 </div>
+
+
+
+<!-- acknowledgements -->
+<a class="page-link" name="acknowledgements"></a>
+<div class="acknowledgements">
+
+	<!--<p class="font">Big shout out to these organisations for their support</p>-->
+	
+	<div class="logos">
+		<div class="item"><a class="hover-opt" href="https://www.theproudtrust.org/" target="_blank">
+			<img src="images/acknowledgements/the-proud-trust-white.png">
+			<img src="images/acknowledgements/the-proud-trust-transparent.png">
+		</a></div>
+		
+		<div class="item"><a class="hover-opt" href="https://homemcr.org/" target="_blank">
+			<img src="images/acknowledgements/HOME-white.png">
+			<img src="images/acknowledgements/HOME-transparent.png">
+		</a></div>
+		
+		<div class="item"><a class="hover-opt" href="http://www.lgbtconsortium.org.uk/" target="_blank">
+			<img src="images/acknowledgements/consortium-white.png">
+			<img src="images/acknowledgements/consortium-transparent.png">
+		</a></div>
+		
+		<div class="item"><a class="hover-opt" href="https://superbia.org.uk/" target="_blank">
+			<img src="images/acknowledgements/superbia_master-white.png">
+			<img src="images/acknowledgements/superbia_master.png">
+		</a></div>
+		
+		<div class="item"><a class="hover-opt" href="https://www.youandb.co.uk/our-stores-manchester/" target="_blank">
+			<img src="images/acknowledgements/bworks-white.png">
+			<img src="images/acknowledgements/bworks-transparent.png">
+		</a></div>
+		
+		<div class="item"><a class="hover-opt" href="https://www.thefederation.coop/" target="_blank">
+			<img src="images/acknowledgements/federation-white.png">
+			<img src="images/acknowledgements/federation.jpg">
+		</a></div>
+		
+		<div class="item"><a  class="hover-opt" href="https://milkandhoneycafe.org/" target="_blank">
+			<img src="images/acknowledgements/milk-and-honey-cafe-white.png">
+			<img src="images/acknowledgements/milk-and-honey-cafe-transparent.png">
+		</a></div>
+		
+	</div>
+
+</div>
+
+
+
+<!-- foot notes -->
 <div class="foot-notes">
-	<p><a href="index.html#home">Home</a> <a href="index.html#about">Who are Rainbow Noir?</a> <a href="index.html#socials">Our meet ups</a> <a href="privacy-policy.html">Privacy Policy</a></p>
+	<p><a href="index.html#home">Home</a> <a href="index.html#about">Who are Rainbow Noir?</a> <a href="index.html#socials">Our meet ups</a> <a href="index.html#events">Events</a> <a href="index.html#projects">Projects</a> <a href="privacy-policy.html">Privacy Policy</a></p>
 	<p>Copyright <img class="icon" src="images/icons/white/copyright.png"></img> 2019, <span class="font"><span class="red">R</span><span class="orange">a</span><span class="yellow">i</span><span class="green">n</span><span class="blue">b</span><span class="indigo">o</span><span class="purple">w</span> Noir MCR</span>. All Rights Reserved.</p>
 </div>
 
@@ -212,6 +275,7 @@
 
 <!-- SCRIPTS -->
 <script language="JavaScript" src="js/script.js" type="text/javascript"></script>
+<script language="JavaScript" src="js/mailgo.min.js" type="text/javascript"></script>
 
 
 
