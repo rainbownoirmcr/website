@@ -44,8 +44,6 @@ for (i = 0; i < acc.length; i++) {
 
 
 
-
-
 /*--------------------------------------------------------------*/
 /* lazyload.js (c) Lorenzo Giuliani
  * MIT License (http://www.opensource.org/licenses/mit-license.html)
@@ -136,7 +134,7 @@ for (i = 0; i < acc.length; i++) {
 /*--------------------------------------------------------------*/
 /* image-grid */
 
-var nimg=39
+var nimg=41
 
 /* image1 */
 var text="images/instagram/"+(nimg-0)+".jpg";
