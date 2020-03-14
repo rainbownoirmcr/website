@@ -43,6 +43,93 @@ for (i = 0; i < acc.length; i++) {
 }
 
 
+/*--------------------------------------------------------------*/
+/* projects modal */
+
+// Project1
+var modal = document.getElementById("modalProject1"); // Get the modal
+var btn = document.getElementById("btnProject1"); // Get the button that opens the modal
+var span = document.getElementsByClassName("close1")[0]; // Get the <span> element that closes the modal
+btn.onclick = function() {
+  modal.style.display = "block";
+} // When the user clicks on the button, open the modal
+span.onclick = function() {
+  modal.style.display = "none";
+} // When the user clicks on <span> (x), close the modal
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+} // When the user clicks anywhere outside of the modal, close it
+
+
+// Project2
+var modal = document.getElementById("modalProject2"); // Get the modal
+var btn = document.getElementById("btnProject2"); // Get the button that opens the modal
+var span = document.getElementsByClassName("close2")[0]; // Get the <span> element that closes the modal
+btn.onclick = function() {
+  modal.style.display = "block";
+} // When the user clicks on the button, open the modal
+span.onclick = function() {
+  modal.style.display = "none";
+} // When the user clicks on <span> (x), close the modal
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+} // When the user clicks anywhere outside of the modal, close it
+
+
+// Project3
+var modal = document.getElementById("modalProject3"); // Get the modal
+var btn = document.getElementById("btnProject3"); // Get the button that opens the modal
+var span = document.getElementsByClassName("close")[0]; // Get the <span> element that closes the modal
+btn.onclick = function() {
+  modal.style.display = "block";
+} // When the user clicks on the button, open the modal
+span.onclick = function() {
+  modal.style.display = "none";
+} // When the user clicks on <span> (x), close the modal
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+} // When the user clicks anywhere outside of the modal, close it
+
+
+// Project4
+var modal = document.getElementById("modalProject4"); // Get the modal
+var btn = document.getElementById("btnProject4"); // Get the button that opens the modal
+var span = document.getElementsByClassName("close4")[0]; // Get the <span> element that closes the modal
+btn.onclick = function() {
+  modal.style.display = "block";
+} // When the user clicks on the button, open the modal
+span.onclick = function() {
+  modal.style.display = "none";
+} // When the user clicks on <span> (x), close the modal
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+} // When the user clicks anywhere outside of the modal, close it
+
+
+// Project5
+var modal = document.getElementById("modalProject5"); // Get the modal
+var btn = document.getElementById("btnProject5"); // Get the button that opens the modal
+var span = document.getElementsByClassName("close5")[0]; // Get the <span> element that closes the modal
+btn.onclick = function() {
+  modal.style.display = "block";
+} // When the user clicks on the button, open the modal
+span.onclick = function() {
+  modal.style.display = "none";
+} // When the user clicks on <span> (x), close the modal
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+} // When the user clicks anywhere outside of the modal, close it
+
 
 /*--------------------------------------------------------------*/
 /* lazyload.js (c) Lorenzo Giuliani
