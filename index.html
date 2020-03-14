@@ -75,14 +75,16 @@
 <div class="nav">
 	
 	<!-- nav button -->
-	<span class="nav-button" onclick="openNav()" style="cursor:pointer">
-		<img class="icon w" src="images/icons/white/bars.png"></img><img class="icon b" src="images/icons/black/bars.png"></img> MENU
-	</span>
+	<div class="nav-button" onclick="openNav()" style="cursor:pointer">
+		<span class="nav-ext"></span>
+		<img class="icon w" src="images/icons/white/bars.png"></img><img class="icon b" src="images/icons/black/bars.png"></img> menu
+	</div>
 	
 	<!-- quick escape -->
-	<span class="exit">
+	<div class="exit">
+		<span class="exit-ext"></span>
 		<a href="https://www.google.com/">exit site</a>
-	</span>
+	</div>
 	
 </div>
 
@@ -125,10 +127,6 @@
 </div>
 
 
-<!-- socialmediawall.io -->
-<!--<div class="social-media-wall"  data-cfg-wallid=55835></div><script async src="https://static.socialmediawall.io/w/init-wall.js"></script>-->
-
-
 <!-- insta images -->
 <div class="image-grid">
 
@@ -167,9 +165,11 @@
 	
 	<div class="monthly">
 		<h3 class="font">QTIPOC Arts Space</h3>
-		<p><img class="icon" src="images/icons/white/calendar.png"></img> Fourth Sunday of the month</p>
+		<p>This meet up is taking a break for a few months.</p>
+		<p>It will be back on later in the year!</p>
+		<!--<p><img class="icon" src="images/icons/white/calendar.png"></img> Fourth Sunday of the month</p>
 		<p><img class="icon" src="images/icons/white/map-marker.png"></img> Interim LGBT+ Centre - Unit 3, Enterprise House, Manchester Science Park, Lloyd Street North, Manchester, M15 6SE</p>
-		<p>We share craft, screen films, write and create with one another.</p>
+		<p>We share craft, screen films, write and create with one another.</p>-->
 	</div>
 	</div>
 	
@@ -215,11 +215,62 @@
 	<div class="project-grid">
 	
 		<div class="container">
-			<div class="item" style="background-image:url('images/projects/birthday-1.jpg'); background-position: center;"><p>Birthday Events</p></div>
-			<div class="item" style="background-image:url('images/projects/pride-3.jpg');"><p>Pride</p></div>
-			<div class="item" style="background-image:url('images/projects/exhibitions-1.jpg'); background-position: center;"><p>Exhibitions</p></div>
-			<div class="item" style="background-image:url('images/projects/house-of-noir-2.jpg');"><p>House of Noir</p></div>
-			<div class="item" style="background-image:url('images/projects/publications.jpg');"><p>Publications</p></div>
+			
+			<!-- Birthday Events -->
+			<a id="btnProject1" class="item" style="background-image:url('images/projects/birthday-1.jpg'); background-position: center;">
+				<p>Birthday Events</p>
+			</a>
+			<div id="modalProject1" class="modal">
+				<div class="modal-content">
+					<span class="close close1">X</span>
+					<p>some text in the modal</p>
+				</div>
+			</div>
+			
+			<!-- Pride -->
+			<a id="btnProject2" class="item" style="background-image:url('images/projects/pride-3.jpg');">
+				<p>Pride</p>
+			</a>
+			<div id="modalProject2" class="modal">
+				<div class="modal-content">
+					<span class="close close2">X</span>
+					<p>some text in the modal</p>
+				</div>
+			</div>
+			
+			<!-- Exhibitions -->
+			<a id="btnProject3" class="item" style="background-image:url('images/projects/exhibitions-1.jpg'); background-position: center;">
+				<p>Exhibitions</p>
+			</a>
+			<div id="modalProject3" class="modal">
+				<div class="modal-content">
+					<span class="close close3">X</span>
+					<p>some text in the modal</p>
+				</div>
+			</div>
+			
+			<!-- House of Noir -->
+			<a id="btnProject4" class="item" style="background-image:url('images/projects/house-of-noir-2.jpg');">
+				<p>House of Noir</p>
+			</a>
+			<div id="modalProject4" class="modal">
+				<div class="modal-content">
+					<span class="close close4">X</span>
+					<p>some text in the modal</p>
+				</div>
+			</div>
+			
+			<!-- Publications -->
+			<a id="btnProject5" class="item" style="background-image:url('images/projects/publications.jpg');">
+				<p>Publications</p>
+			</a>
+			<div id="modalProject5" class="modal">
+				<div class="modal-content">
+					<span class="close close5">X</span>
+					<p>some text in the modal about publications</p>
+				</div>
+			</div>
+			
 		</div>
 			
 	</div>	
@@ -312,8 +363,8 @@
 
 <!-- foot notes -->
 <div class="foot-notes">
-	<p><a href="#home">Home</a> <a href="#about">Who are Rainbow Noir?</a> <a href="#socials">Our meet ups</a> <a href="#events">Events</a> <a href="#projects">Projects</a> <a href="privacy-policy.html">Privacy Policy</a></p>
-	<p>Copyright <img class="icon" src="images/icons/white/copyright.png"></img> 2019, <span class="font"><span class="red">R</span><span class="orange">a</span><span class="yellow">i</span><span class="green">n</span><span class="blue">b</span><span class="indigo">o</span><span class="purple">w</span> Noir MCR</span>. All Rights Reserved.</p>
+	<p class="bottom-menu"><a href="#home">Home</a> <a href="#about">Who are Rainbow Noir?</a> <a href="#socials">Our meet ups</a> <a href="#events">Events</a> <a href="#projects">Projects</a> <a href="privacy-policy.html">Privacy Policy</a></p>
+	<p>Copyright <img class="icon" src="images/icons/white/copyright.png"></img> 2020, <span class="font"><span class="red">R</span><span class="orange">a</span><span class="yellow">i</span><span class="green">n</span><span class="blue">b</span><span class="indigo">o</span><span class="purple">w</span> Noir MCR</span>. All Rights Reserved.</p>
 </div>
 
 
